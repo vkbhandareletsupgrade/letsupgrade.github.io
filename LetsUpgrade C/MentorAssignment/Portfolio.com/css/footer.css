@@ -1,0 +1,32 @@
+
+
+  :root {
+    --theme: #0f5875;
+    /* #0f7075; */
+    --black: black;
+    --white: white;
+  }
+    footer{
+        
+        padding:0;
+        width: 100%;
+        height: 10vh;
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black);
+    }
+    .footer-container{
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-container P{
+      color: white;
+      font-size: 14px;
+    }
+    

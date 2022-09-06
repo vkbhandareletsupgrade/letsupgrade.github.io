@@ -1,0 +1,24 @@
+.projects-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.projects-container .card{
+    width: 80%;
+    margin: auto;
+}
+.projects-container .card img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.projects{
+    margin: 100px 0;
+}
+.projects .bottom-border-img{
+    width: 15%;
+    margin: auto;
+}
+.projects-heading, .projects .bottom-border-img{
+    margin-bottom: 10px;
+}

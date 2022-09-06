@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body,
+  input,
+  button {
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  p,
+  li {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  .navbar-toggler:focus {
+      text-decoration: none;
+      outline: 0;
+      box-shadow: 0 0 0 0;
+    }
+    .hamburger{
+     margin-right: 1rem;
+    }
+  /* ======Color======== */
+  :root {
+    --primary: #d70d25;
+    --blue: #4948d4;
+    --purple: #6400ae;
+    --aqua: #05b3b6;
+    --black: #222222;
+    --lightgray: #bfbcbc;
+    --white: #ffffff;
+    --lightprimary: #f89999;
+    --para: #fea0a0;
+    --text-mute: #878787;
+  }
+  
+  .navbar {
+    background-color: var(--primary);
+  }
+  .navbar a {
+    color: var(--black);
+  }
+  .navbar .navbar-brand {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+  .navbar .nav-link {
+    color: var(--lightprimary);
+    font-size: 1.6rem;
+  }
+  .navbar .active {
+    color: var(--white);
+  }
+  .navbar .logo {
+    width: 18rem;
+  }
+  
+  /* =======hero======== */
+  .hero-section {
+    padding: 6rem 0 0;
+    background-color: var(--primary);
+  }
+  .hero-img {
+    width: 40rem;
+  }
+  .hero-left h1 {
+    font-size: 5.5rem;
+    font-weight: bolder;
+    color: var(--white);
+  }
+  .hero-section p {
+    color: wheat;
+    line-height: 2;
+    font-size: 1.5rem;
+  }
+  .hero-section .btn-hero {
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
