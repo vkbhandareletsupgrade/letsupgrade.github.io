@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Fruits</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        list-style: square;
+        text-decoration: none;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:30px;
+    }
+    input{
+        width: 50%;
+        border-radius: 50px;
+        outline: none;
+        border: 1px solid gray;
+        padding: 10px 20px;
+    }
+    button{
+        width:150px;
+        padding: 10px 20px;
+        outline: none;
+        border: .5px solid black;
+    }
+</style>
+<body>
+    <!-- <div class="before">
+        <ul>
+            <li>Grapes</li>
+            <li>Apple</li>
+            <li>Pineapple</li>
+            <li>Gauva</li>
+        </ul>
+    </div> -->
+    <div id="before"></div>
+    <div class="container">
+        <h3>Add Fruits u want</h3>
+        <input type="text" id="fruitname" />
+        <button type="submit" onclick='addfruit()'>Add Fruit</button>
+    </div>
+    <div class="result">
+        <ul>
+            <li id="showresult"></li>
+        </ul>
+    </div>
+    <script>
+        const fruits = ["Grapes","Tomato","Pineapple"]
+        document.getElementById('before').innerHTML= "Before Adding" +fruits;
+        function addfruit(){
+           
+        let newname = document.getElementById(fruitname).value;          
+        fruits.push(newname);
+        console.log(fruits);
+        }
+        
+    </script>
+</body>
+</html>

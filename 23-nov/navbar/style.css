@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: #afd9ea;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+header a{
+    color: rgb(53, 53, 53);
+    transition: all .5s ease-in-out;
+    margin-bottom: 5px;
+}
+header a:hover{
+    color: rgb(255, 51, 149);
+    border-bottom: 1px solid rgb(255, 243, 13);
+
+}
+.logo-container{
+    width:100px;
+    height:100px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.logo-container .logo{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+nav{
+    width: 40%;
+}
+nav .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+}
+.right {
+    width: 15%;
+    color: black;
+    font-size: 30px;
+    display: none;
+  }
+
+  main{
+    width: 100%;
+    height: 100vh;
+    background:url('./bg-01.jpg') no-repeat center center/cover;
+} 
+@media screen and (max-width: 500px) {
+    header{
+        padding: 30px 30px;
+        height: 5vh;
+        width: 100%;
+    }
+    header .logo-container{
+        width: 80px;
+        height: 70px;
+    }
+    header img{
+       width: 100%;
+       height: 100%;
+    }
+    header a{
+        color: white;
+    }
+    nav{
+        background-color: rgb(14, 128, 147,0.5);
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        top: 13.5vh;
+        left:0px;
+        text-align: center;
+        transform: translateY(-600px);
+        transition: transform 0.5s;
+        width: 110%;
+    }
+   
+    nav.show{
+        transform: translateX(-20px);
+    }
+    nav .list{
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .right {
+        display: block;
+      }
+}
+
