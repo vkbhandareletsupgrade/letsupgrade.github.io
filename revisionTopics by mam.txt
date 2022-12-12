@@ -1,0 +1,7 @@
+9-12/22
+dom timer function (settimout interval), regex, callbacks
+
+9/11 project calculater using promise
+
+round watch with sec min 
+alarm project
