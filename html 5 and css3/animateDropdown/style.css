@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #4c4c62a3;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+header .logo-container{
+    width: 60px;
+    height: 60px;
+}
+header .logo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navlist .navlinks a{
+    color: white;
+}
+.sublist{
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 10vh;
+    right: 165px;
+    padding: 20px;
+    display: block;
+    display: none;
+}
+.navlinks:nth-child(3):hover .sublist{
+    display: block;
+}
+

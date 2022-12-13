@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="one">
+                <input type="text" id="first">
+                <select id="operand">
+                    <option value="+"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</option>
+                    <option value="-"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</option>
+                    <option value="*"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</option>
+                    <option value="/"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</option>
+                </select>
+                <input type="text" id="second"><br>
+                
+            </div>
+        </div>
+        <div >
+            <input type="button" id="submit" value ="Calculate" onclick="cal()">
+            <input type="text" id="show" readonly>
+        </div>
+       
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
