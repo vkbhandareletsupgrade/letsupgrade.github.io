@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Intro</title>
+</head>
+<style>
+    #canvas{
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <canvas id="canvas" height="500" width="800"></canvas>
+    <script>
+        // these next 2 lines r always there
+        let canvas = document.getElementById("canvas");
+        let context = canvas.getContext("2d");
+        // beginPath();
+        // context.moveTo(300,200);
+        // context.lineTo(500,200);
+        // context.lineTo(500,300);
+        // context.lineTo(300,300);
+        // context.lineTo(300,200);
+        // context.stroke();
+
+        // context.moveTo(100,75);
+        // context.lineTo(300,75);
+        // context.lineTo(300,150);
+        // context.lineTo(100,150);
+        // context.lineTo(100,75);
+        // context.stroke();
+        // rectangle end
+
+        context.moveTo(100,75);
+        context.lineTo(200,200);
+        context.lineTo(50,200);
+        context.lineTo(100,75);
+        context.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text</title>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="600" style="border: 2px solid black;"></canvas>
+
+    <script>
+
+        let crypto =[
+            {
+                name:"BitCoin",
+                value: 18000
+            },
+            {
+                name:"DoggyCoin",
+                value: 7000
+            },
+            {
+                name:"Etherium",
+                value: 13000
+            },
+            {
+                name:"Quantum",
+                value: 8000
+            },
+            {
+                name:"Strepto",
+                value: 20000
+            },
+            {
+                name:"Lithium",
+                value: 8000
+            },
+            {
+                name:"Makao",
+                value: 15000
+            }
+        ]
+        let canvas = document.getElementById('canvas');
+        let context = canvas.getContext('2d');
+        
+        context.moveTo(50,50);
+        context.font = "20px ariel";
+        context.fillText('X',45,30);
+
+        context.lineTo(50,550); //to draw a straight line we set x to 50 same as previous so we can add a straight line only on y axis
+
+        context.fillText('Y',25,550);
+        
+        context.lineTo(950,550);
+        context.fillText('Y',960,555);
+        context.lineWidth = 5;
+        context.stroke();
+
+       context.beginPath();
+       let x_axis = 150;
+       context.moveTo(50,550);
+       context.strokeStyle = "orange";
+       context.fillStyle = "hotpink";
+       for(let i=0;i<crypto.length;i++){
+           
+            let find_percentage = (crypto[i].value/30000)*100;
+            let find_y_axis = (find_percentage/100)*600;
+            
+            context.lineTo(x_axis,550-find_y_axis);
+            x_axis+=120;
+        
+       }
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(50,550);
+        context.font = "20px calibri";
+        
+        let x_legends = 120;
+
+        for(let i=0; i<crypto.length; i++)
+        {
+            context.fillText(crypto[i].name, x_legends, 570);
+            x_legends+=120;
+        }
+        context.stroke();
+    </script>
+</body>
+</html>

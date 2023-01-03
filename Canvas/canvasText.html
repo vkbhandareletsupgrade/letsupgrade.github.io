@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text</title>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="600" style="border: 2px solid black;"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let context = canvas.getContext('2d');
+
+        // context.font ="20px ariel";
+        // context.strokeStyle ='red';
+        // context.strokeText("Amazing Day",10,50);
+        // context.stroke();
+
+        // context.font ="20px ariel";
+        // context.fillStyle = 'orange';
+        // context.fillText("Pleasant Day",10,50);
+       
+        context.moveTo(100,100);
+        context.lineTo(200,200);
+        context.lineTo(400,100);
+        context.closePath();// if we declare closePath() before stroke() then it will draw a default line from the start to end 
+        context.stroke();
+    </script>
+</body>
+</html>

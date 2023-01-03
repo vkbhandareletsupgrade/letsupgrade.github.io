@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Linear Gradient</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="250" style="border: 2px solid black;"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let context = canvas.getContext('2d');
+
+        // let gradient = context.createLinearGradient(0,0,250,0);
+        // gradient.addColorStop(0,'red');
+        // gradient.addColorStop(1,'yellow');
+        // context.fillStyle =gradient;
+        // context.fillRect(10,40,150,100);
+        // // context.stroke();
+
+        let gradient = context.createLinearGradient(0,0,200,0);
+        gradient.addColorStop(0,'yellow');
+        gradient.addColorStop(1,'orange');
+        context.fillStyle = gradient;
+        context.fillRect(100,50,200,150)
+    </script>
+</body>
+</html>

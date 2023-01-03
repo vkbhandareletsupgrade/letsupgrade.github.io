@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text</title>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="600" style="border: 2px solid black;"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas');
+        let context = canvas.getContext('2d');
+        
+        // context.beginPath();
+        // context.strokeStyle = "black";
+        // context.lineWidth = "5";
+        // context.arc(300,300,100,0,Math.PI*2); //pi*1 for half circle likewise
+        // true for Anti-clockwise , false for Clockwise
+        // context.fillStyle = 'orange';
+        // context.fill();
+        // context.stroke();
+
+        context.beginPath();
+        context.strokeStyle = "black";
+        context.lineWidth = "5";
+        context.arc(300,300,100,0,Math.PI*1.2,false); //pi*1 for half circle likewise
+        context.fillStyle = 'orange';
+        context.fill();
+        context.stroke();
+    </script>
+</body>
+</html>

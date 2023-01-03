@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards-container{
+    width: 200%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: slide 8s infinite running;
+}
+.cards-container .card{
+    width: 20%;
+    background: center center/cover
+}
+.cards-container .card img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    25%{
+        margin-left: -40%;
+    }
+    50%{
+        margin-left: -80%;
+    }
+    75%{
+        margin-left: -120%;
+    }
+    90%{
+        margin-left: -130%;
+    }
+}
